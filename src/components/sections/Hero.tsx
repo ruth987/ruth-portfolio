@@ -17,27 +17,27 @@ export function Hero() {
           )}
 
           <h1>
-            <span className="animate-rise block font-sans text-base font-medium tracking-normal text-muted">
+            <span className="block font-sans text-base font-medium tracking-normal text-muted">
               {site.name}
               <span aria-hidden> · </span>
               <span className="sr-only">, </span>
               {site.role}, {site.location}
             </span>
-            <span className="animate-rise mt-5 block max-w-[17ch] text-display [animation-delay:80ms]">
+            <span className="mt-5 block max-w-[17ch] text-display">
               {hero.headline}
             </span>
           </h1>
 
-          <p className="animate-rise mt-7 max-w-[42ch] text-xl text-ink/80 [animation-delay:160ms] md:text-2xl md:leading-snug">
+          <p className="animate-rise mt-7 max-w-[42ch] text-xl text-ink/80 [animation-delay:60ms] md:text-2xl md:leading-snug">
             {hero.subline}
           </p>
 
           {hero.currently && (
-            <p className="animate-rise mt-4 text-muted [animation-delay:200ms]">{hero.currently}</p>
+            <p className="animate-rise mt-4 text-muted [animation-delay:100ms]">{hero.currently}</p>
           )}
 
           <ul
-            className="animate-rise mt-10 flex flex-wrap items-center gap-3 [animation-delay:260ms]"
+            className="animate-rise mt-10 flex flex-wrap items-center gap-3 [animation-delay:140ms]"
             aria-label="Links"
           >
             <li>

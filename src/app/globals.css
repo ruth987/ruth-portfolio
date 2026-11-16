@@ -94,7 +94,6 @@
     font-family: var(--font-display);
     font-weight: 450;
     text-wrap: balance;
-    font-variation-settings: "SOFT" 30;
   }
 
   p {

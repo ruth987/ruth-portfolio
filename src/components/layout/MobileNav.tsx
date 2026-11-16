@@ -34,7 +34,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
           {items.map((item) => (
             <li key={item.id}>
               <a
-                href={`#${item.id}`}
+                href={`/#${item.id}`}
                 onClick={() => setOpen(false)}
                 className="block py-3 font-display text-xl text-ink hover:text-accent"
               >

@@ -35,3 +35,9 @@ Personal portfolio for Ruth Wossen Bekele (software engineer, Luxembourg). Next.
 - Commits: conventional messages (`feat:`, `fix:`, `chore:`, `docs:`), one per build stage/section.
 
 @AGENTS.md
+
+## SEO & polish notes
+- Base URL: `getSiteUrl()` in `src/lib/url.ts` → `site.siteUrl` (once not TODO) → `VERCEL_PROJECT_PRODUCTION_URL` → localhost. Used by metadata, sitemap, robots, JSON-LD.
+- OG image: `src/app/opengraph-image.tsx` (next/og). It needs TTF files, so static instances live in `src/assets/fonts` (SIL OFL); font loading is in a `"use cache"` helper so the image stays prerendered.
+- JSON-LD Person: `src/lib/jsonld.ts` (no phone, no email).
+- Performance: the hero headline is deliberately NOT animated (it is the LCP element). Fraunces loads only the `opsz` axis to keep the font small. Last Lighthouse run: mobile 96/100/100/100, desktop 100/100/100/100.

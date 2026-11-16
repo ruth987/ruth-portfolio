@@ -5,12 +5,14 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { SkipLink } from "@/components/layout/SkipLink";
 import { themeScript } from "@/components/layout/themeScript";
+import { personJsonLd, serializeJsonLd } from "@/lib/jsonld";
+import { getSiteUrl } from "@/lib/url";
 import "./globals.css";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
   variable: "--font-fraunces",
-  axes: ["opsz", "SOFT"],
+  axes: ["opsz"],
   display: "swap",
 });
 
@@ -21,8 +23,30 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: site.seo.title,
+  metadataBase: getSiteUrl(),
+  title: { default: site.seo.title, template: `%s · ${site.name}` },
   description: site.seo.description,
+  applicationName: site.name,
+  authors: [{ name: site.name }],
+  creator: site.name,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "profile",
+    url: "/",
+    siteName: site.name,
+    title: site.seo.title,
+    description: site.seo.description,
+    locale: "en_GB",
+    firstName: "Ruth",
+    lastName: "Wossen Bekele",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.seo.title,
+    description: site.seo.description,
+  },
+  robots: { index: true, follow: true },
+  formatDetection: { telephone: false, email: false, address: false },
 };
 
 export const viewport: Viewport = {
@@ -41,6 +65,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(personJsonLd()) }}
+        />
       </head>
       <body id="top" className="flex min-h-dvh flex-col">
         <SkipLink />
