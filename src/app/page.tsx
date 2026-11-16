@@ -1,12 +1,10 @@
-import { site } from "@/content/site";
-import { Hero } from "@/components/sections/Hero";
+import { About } from "@/components/sections/About";
+import { Contact } from "@/components/sections/Contact";
 import { Experience } from "@/components/sections/Experience";
+import { Hero } from "@/components/sections/Hero";
 import { Projects } from "@/components/sections/Projects";
-import { Teaching } from "@/components/sections/Teaching";
 import { SelectedWork } from "@/components/sections/SelectedWork";
-import { Section } from "@/components/ui/Section";
-
-const built = new Set(["work", "experience", "projects", "teaching"]);
+import { Teaching } from "@/components/sections/Teaching";
 
 export default function Home() {
   return (
@@ -16,14 +14,8 @@ export default function Home() {
       <Experience />
       <Projects />
       <Teaching />
-      {/* Placeholders: replaced one section at a time in stage 3. */}
-      {site.nav.map((item, i) =>
-        built.has(item.id) ? null : (
-          <Section key={item.id} id={item.id} index={String(i + 1).padStart(2, "0")} title={item.label}>
-            <p className="text-muted">Coming in stage 3.</p>
-          </Section>
-        ),
-      )}
+      <About />
+      <Contact />
     </>
   );
 }

@@ -208,12 +208,20 @@ export const site: Site = {
     closing:
       "Being the first woman in that role mattered to me. I want women entering software engineering to see someone like them leading the room, and I try to be that person.",
   },
-  about: [],
+  // DRAFT in your voice: rewrite freely. Keep it to 3–4 sentences.
+  about: [
+    "I studied software engineering in Addis Ababa and trained in algorithms at A2SV before joining Amazon in Luxembourg in 2025.",
+    "The work I enjoy most is taking a system people have learned to work around and turning it into something they can rely on, without asking anyone to put up with downtime along the way.",
+    "Teaching shaped how I engineer: explaining a design to a room of students is a fast way to find its weak spots.",
+  ],
 
   contact: {
-    blurb: "TODO: contact blurb (stage 3f)",
+    blurb: "The quickest way to reach me is email. I'm also on LinkedIn.",
     email: "ruthwossenbekele@gmail.com",
-    links: [],
+    links: [
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/ruth-wossen-bekele", external: true },
+      { label: "Download CV", href: "/Ruth_Wossen_Bekele_CV.pdf" },
+    ],
   },
 
   footer: {
