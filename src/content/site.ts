@@ -162,7 +162,24 @@ export const site: Site = {
       ],
     },
   ],
-  projects: [],
+  // Add a project by adding an object to this array.
+  projects: [
+    {
+      name: "Semantic File Explorer",
+      period: { start: "2024-12", end: "2025-05" },
+      stack: ["Rust", "Tauri", "React", "TypeScript", "LanceDB", "ONNX", "Tantivy"],
+      team: "Team of 5",
+      description:
+        "A local-first desktop app that finds files by meaning from natural-language queries across PDFs, text files and 5 image formats, fully offline.",
+      myPart: "I built the Rust indexing pipeline.",
+      bullets: [
+        "Watches folders in real time, chunks documents and generates multilingual text and image embeddings in LanceDB, alongside a Tantivy index for fuzzy filename search.",
+        "Kept indexing and search fast on ordinary laptops with async batching and INT8-quantized ONNX models (~4× smaller).",
+        "Covered the backend with 50 unit and integration tests.",
+      ],
+      links: [{ label: "Source on GitHub", href: "TODO: Semantic File Explorer repo URL", external: true }],
+    },
+  ],
   teaching: { items: [] },
   about: [],
 

@@ -1,10 +1,11 @@
 import { site } from "@/content/site";
 import { Hero } from "@/components/sections/Hero";
 import { Experience } from "@/components/sections/Experience";
+import { Projects } from "@/components/sections/Projects";
 import { SelectedWork } from "@/components/sections/SelectedWork";
 import { Section } from "@/components/ui/Section";
 
-const built = new Set(["work", "experience"]);
+const built = new Set(["work", "experience", "projects"]);
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <SelectedWork />
       <Experience />
+      <Projects />
       {/* Placeholders: replaced one section at a time in stage 3. */}
       {site.nav.map((item, i) =>
         built.has(item.id) ? null : (
