@@ -180,7 +180,34 @@ export const site: Site = {
       links: [{ label: "Source on GitHub", href: "TODO: Semantic File Explorer repo URL", external: true }],
     },
   ],
-  teaching: { items: [] },
+  teaching: {
+    items: [
+      {
+        title: "Head of Education",
+        org: "A2SV",
+        period: { start: "2023-10", end: "2024-10" },
+        body: "The first woman to serve as A2SV's Head of Education. I led data structures and algorithms training for 33 students preparing for big-tech interviews, from the curriculum and coding challenges to mock interviews, and mentored a hackathon team to a top-3 finish out of 54. I also taught 30 students Flutter/Dart with a focus on clean architecture and testing; they averaged a 97% performance score and a 95% task completion rate.",
+      },
+      {
+        title: "Job application tracking platform",
+        org: "Eskalate",
+        body: "I built the platform used by 250+ students and 400+ members to track their job applications; application success rates rose by 20%.",
+      },
+      {
+        title: "GDSC core team",
+        org: "Google Developer Student Clubs, AASTU",
+        body: "At university I organized workshops with tech companies and speakers in Ethiopia, and led AI project ideas.",
+      },
+      {
+        title: "Guest speaker",
+        org: "GDSC and She Codes",
+        body: "I've given talks as a guest speaker at GDSC and She Codes events.",
+      },
+    ],
+    // Your voice: edit freely.
+    closing:
+      "Being the first woman in that role mattered to me. I want women entering software engineering to see someone like them leading the room, and I try to be that person.",
+  },
   about: [],
 
   contact: {
