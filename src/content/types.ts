@@ -59,6 +59,8 @@ export type Role = {
   periods: DateRange[];
   summary?: string;
   bullets: string[];
+  /** Optional pointer to more detail elsewhere on the page. */
+  seeAlso?: Link;
 };
 
 export type Education = {

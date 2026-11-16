@@ -101,8 +101,67 @@ export const site: Site = {
       tags: ["Python", "Amazon Bedrock", "AWS Lambda", "AI agents"],
     },
   ],
-  experience: [],
-  education: [],
+  experience: [
+    {
+      org: "Amazon",
+      title: "Software Engineer",
+      location: "Luxembourg",
+      periods: [{ start: "2025-09", end: "Present" }],
+      summary: "Building event-driven services on AWS.",
+      bullets: [
+        "Led the redesign of a 9-year-old batch system into a near-real-time, event-driven service, migrated with zero downtime.",
+        "Won 1st place in a hackathon with automated inventory ringfencing for emerging EU markets.",
+        "Built an AI agent for bug analysis that the team adopted.",
+      ],
+      seeAlso: { label: "Details in Selected work", href: "#work" },
+    },
+    {
+      org: "Eskalate",
+      title: "Software Engineering Intern",
+      location: "Remote",
+      periods: [
+        { start: "2023-07", end: "2023-10" },
+        { start: "2024-07", end: "2024-10" },
+      ],
+      bullets: [
+        "Developed a job application tracking platform used by 250+ students and 400+ members (Next.js, MUI, Zustand); application success rates rose by 20%.",
+        "Contributed features to the company's web app in a team of 8 (React, Redux, TypeScript) and wrote Cypress and Jest tests.",
+      ],
+    },
+    {
+      org: "A2SV (Africa to Silicon Valley)",
+      title: "Head of Education, DSA & Software Engineering Trainer",
+      location: "Addis Ababa, Ethiopia",
+      periods: [{ start: "2023-10", end: "2024-10" }],
+      bullets: [
+        "Led data structures and algorithms training for 33 students preparing for big-tech interviews: curriculum, coding challenges and mock interviews.",
+        "Taught 30 students Flutter/Dart with a focus on clean architecture and testing.",
+        "Automated student progress tracking with Google Apps Script, cutting a weekly 5+ hour task to minutes.",
+      ],
+      seeAlso: { label: "More in Teaching & community", href: "#teaching" },
+    },
+  ],
+
+  education: [
+    {
+      school: "Addis Ababa Science and Technology University",
+      credential: "B.Sc. Software Engineering",
+      location: "Addis Ababa, Ethiopia",
+      period: { start: "2021-06", end: "2025-06" },
+      notes: ["GPA 3.68 / 4.0"],
+    },
+    {
+      school: "A2SV (Africa to Silicon Valley, backed by Google)",
+      credential: "Coding Academy",
+      location: "Addis Ababa, Ethiopia",
+      period: { start: "2022-11", end: "2023-11" },
+      notes: [
+        "Intensive 30+ hours/week program in advanced data structures and algorithms; solved 900+ problems on Codeforces and LeetCode.",
+        "Competed in the 2023 ICPC Ethiopian Collegiate Programming Contest.",
+        "Ranked in the top 10% of the cohort and selected as Head of Education.",
+      ],
+    },
+  ],
   projects: [],
   teaching: { items: [] },
   about: [],
