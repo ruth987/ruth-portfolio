@@ -42,8 +42,10 @@ export type CaseStudy = {
   title: string;
   org: string;
   period: DateRange;
-  /** One line under the title, e.g. "Amazon · Feb–Oct 2026". */
-  context: string;
+  /** Optional extra context shown after org and dates, e.g. "Technical lead". */
+  context?: string;
+  /** Optional award/label shown as a badge, e.g. "Hackathon · 1st place". */
+  highlight?: string;
   problem: string | Todo;
   did: string[];
   result: string[];
