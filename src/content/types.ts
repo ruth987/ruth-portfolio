@@ -102,6 +102,8 @@ export type Site = {
   hero: {
     headline: string;
     subline: string;
+    /** Short factual line under the subline, e.g. current role. Optional. */
+    currently?: string;
     cta: { cv: Link; linkedin: Link; github: Link; email: Link };
   };
   selectedWork: CaseStudy[];

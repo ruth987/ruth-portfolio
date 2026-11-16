@@ -33,6 +33,7 @@ export const site: Site = {
   hero: {
     headline: "Software engineer building reliable, event-driven systems on AWS.",
     subline: "I modernize legacy systems without the downtime.",
+    currently: "Currently a software engineer at Amazon in Luxembourg.",
     cta: {
       // TODO: replace the PDF with the version without a phone number.
       cv: { label: "Download CV", href: "/Ruth_Wossen_Bekele_CV.pdf" },
